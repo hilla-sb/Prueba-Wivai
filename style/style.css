@@ -1,19 +1,42 @@
+/* caja principal*/
+ .principal{
+   
+    border-radius: 20px;
+    background-color: #F7F8FA;
+    border: 1px solid #F7F8FA;
+    border: 3px solid black;
+}
 
-
+/* hero Image*/
 .imagen-1{
+    background-image: url(/assets/backgrond1.png);
     position: absolute;
     width: 1312px;
     height: 464px;
     left: 63px;
     top: 86px;
-    background: #D9D9D9;
     border-radius: 20px;
-    z-index: -1;
+    border: 3px solid pink;
+ 
+}
+
+@media screen and (max-width: 667px){
+
+    .imagen-1 { 
+        background-image: url(/assets/backgrond2.png);
+ position: absolute;
+left: -184.73%;
+right: -125.33%;
+top:30.35%;
+bottom: 14.46%;
+
+
+    }
 }
 
 
 
-
+/*Title HERO */
 .title-p{
 position: absolute;
 width: 520px;
@@ -23,29 +46,56 @@ top: 20%;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 600;
-font-size: 56px;
+font-size: 3em;
 line-height: 66px;
 color: #133599;
+border: 3px solid purple;
+}
+ 
+
+@media screen and (max-width: 667px){
+
+.title-p {
+    position: absolute;
+    left: 5.29%;
+    top: -0.2%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+}
 }
 
 
-
+/* Green Button */
 .button-p{
 font-family: 'Montserrat';
 width: 275px;
 height: 60px;
 position: absolute;
-left: 10%;
+left: 17%;
 top: 60%;
 bottom: 0%;
 background: #1AF5B1;
 border-radius: 7.5px;
 border-color: #1AF5B1;
 text-decoration-color: #133599 !important;
+border: 3px solid blue;
 }
 
 
+@media screen and (max-width: 667px){
+    .button-p{
+        width: 163px;
+        height: 53px;
+        top: 19%;
+        left: 12%;
+    } 
+}
 
+
+/* Codigo NRI */
 .codigo{
     position: absolute;
     width: 126px;
@@ -58,22 +108,42 @@ text-decoration-color: #133599 !important;
     font-size: 12px;
     line-height: 21px;
     text-transform: uppercase;
-   
+    border: 3px solid yellow;
+}
+
+@media screen and (max-width: 667px){
+    .codigo{
+        display: flex;
+        transform: rotate(-90deg);
+        font-size: 12px;
+        top: 36%;
+        right: -43px;
+    }
 }
 
 
-
-
-
+/* logo Pikolin */
 .logo{
 position: absolute;
 right: 12.34%;
 bottom: 29.04%;
 background-color:white;
+border: 3px solid orange;
 }
 
+@media screen and (max-width: 667px){
+    .logo{
+        width: 132px;
+        display: flex;
+        right: 11%;
+        top: 87%;
+    }
+}
+
+/* caja 2 */
+
 .box-2{
-    margin-left: 8%;
+    margin-left: 4%;
     width: 1312px;
     display: flex;
     gap: 3%;
@@ -81,11 +151,39 @@ background-color:white;
     
 }
 
+@media screen and (max-width: 667px){
+    .box-2{
+      border: 2px solid red;
+      display: block;
+      width: 100%;
+      margin-top: 187%;
+    margin-left: 1px;
+
+    }
+}
 
 .box-2 p{
 color:#133599; 
 font-family: 'Montserrat';
-
-
 font-size: 26px;
+display: flex;
+justify-content: center;
+}
+ 
+.iconn{
+    display: flex;
+    justify-content: center;
+    Width:73.76px;
+Height:47.25px; 
+
+}
+
+ 
+
+@media screen and (max-width: 667px){
+.iconn{
+    display: flex;
+justify-content: center;
+margin-left: 39%;
+}
 }
