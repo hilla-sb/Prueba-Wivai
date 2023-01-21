@@ -1,189 +1,187 @@
+body {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
 /* caja principal*/
- .principal{
-   
-    border-radius: 20px;
-    background-color: #F7F8FA;
-    border: 1px solid #F7F8FA;
-    border: 3px solid black;
+.principal {
+  border-radius: 20px;
+  background-color: #f7f8fa;
+  border: 1px solid #f7f8fa;
+  border: 3px solid black;
+  padding: 2rem;
 }
 
 /* hero Image*/
-.imagen-1{
-    background-image: url(/assets/backgrond1.png);
-    position: absolute;
-    width: 1312px;
-    height: 464px;
-    left: 63px;
-    top: 86px;
-    border-radius: 20px;
-    border: 3px solid pink;
- 
+.contenedor-p {
+  background-image: url(/assets/backgrond1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 2rem;
+  border-radius: 20px;
+  border: 3px solid pink;
+  background-position-x: 100%;
+  height: 20rem;
+  min-height: 20rem;
 }
-
-@media screen and (max-width: 667px){
-
-    .imagen-1 { 
-        background-image: url(/assets/backgrond2.png);
- position: absolute;
-left: -184.73%;
-right: -125.33%;
-top:30.35%;
-bottom: 14.46%;
-
-
-    }
-}
-
-
 
 /*Title HERO */
-.title-p{
-position: absolute;
-width: 520px;
-height: 198px;
-left: 131px;
-top: 20%;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 3em;
-line-height: 66px;
-color: #133599;
-border: 3px solid purple;
-}
- 
-
-@media screen and (max-width: 667px){
-
 .title-p {
-    position: absolute;
-    left: 5.29%;
-    top: -0.2%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 36px;
+  position: absolute;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5em;
+  color: #133599;
+  border: 3px solid purple;
+  left: 3%;
+  top: 16%;
 }
-}
-
 
 /* Green Button */
-.button-p{
-font-family: 'Montserrat';
-width: 275px;
-height: 60px;
-position: absolute;
-left: 17%;
-top: 60%;
-bottom: 0%;
-background: #1AF5B1;
-border-radius: 7.5px;
-border-color: #1AF5B1;
-text-decoration-color: #133599 !important;
-border: 3px solid blue;
+.button {
+  background: #1af5b1;
+  border-radius: 7.5px;
+  position: absolute;
+  bottom: 20%;
+    width: 200.9px;
+    height: 60px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-weight: 800;
 }
 
-
-@media screen and (max-width: 667px){
-    .button-p{
-        width: 163px;
-        height: 53px;
-        top: 19%;
-        left: 12%;
-    } 
+.parallelogram {
+  transform: skew(-20deg);
 }
 
+.skew-fix {
+  display: inline-block;
+  transform: skew(20deg);
+}
 
 /* Codigo NRI */
-.codigo{
-    position: absolute;
-    width: 126px;
-    height: 21px;
-    right: 11%;
-    top: 15%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 21px;
-    text-transform: uppercase;
-    border: 3px solid yellow;
+.codigo {
+  position: absolute;
+  width: 126px;
+  height: 21px;
+  top: 2%;
+  right: 2%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  border: 3px solid yellow;
 }
-
-@media screen and (max-width: 667px){
-    .codigo{
-        display: flex;
-        transform: rotate(-90deg);
-        font-size: 12px;
-        top: 36%;
-        right: -43px;
-    }
-}
-
 
 /* logo Pikolin */
-.logo{
-position: absolute;
-right: 12.34%;
-bottom: 29.04%;
-background-color:white;
-border: 3px solid orange;
-}
-
-@media screen and (max-width: 667px){
-    .logo{
-        width: 132px;
-        display: flex;
-        right: 11%;
-        top: 87%;
-    }
+.logo {
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+  background-color: white;
+  border: 3px solid orange;
 }
 
 /* caja 2 */
-
-.box-2{
-    margin-left: 4%;
-    width: 1312px;
-    display: flex;
-    gap: 3%;
-    margin-top: 37%;
-    
+.box-2 {
+  color: #133599;
+  font-family: "Montserrat";
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  font-weight: 600;
+  padding: 1rem;
 }
 
-@media screen and (max-width: 667px){
-    .box-2{
-      border: 2px solid red;
-      display: block;
-      width: 100%;
-      margin-top: 187%;
-    margin-left: 1px;
+.iconn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  gap: 2rem;
+}
+
+/* Media querie 900px*/
+
+@media (max-width: 900px) {
+  .contenedor-p {
+    background-position-x: 50%;
+  }
+  .box-2 {
+    gap: 0.5%;
+  }
+  .iconn {
+    gap: 0.5%;
+    font-size: 10px;
+  }
+}
+
+/* Media querie 600px*/
+
+@media (max-width: 600px) {
+  .contenedor-p {
+    background-image: url(/assets/backgrond2.png);
+    margin-top: 18rem;
+    height: 20rem;
+    min-height: 20rem;
+  }
+
+  .title-p {
+    top: -79%;
+  }
+
+  .button {
+    top: -25%;
+  }
+
+  .codigo {
+    transform: rotate(-90deg);
+    top: 16%;
+    right: -9%;
+  }
+
+  .box-2 {
+    flex-direction: column;
+  }
+
+  .iconn {
+    flex-direction: column;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 16px;
+    gap: 1rem;
+  }
+}
+
+/* Media querie 300px*/
+@media (max-width: 360px) {
+    .title-p {
+        font-size: 2em;
     }
-}
-
-.box-2 p{
-color:#133599; 
-font-family: 'Montserrat';
-font-size: 26px;
-display: flex;
-justify-content: center;
-}
- 
-.iconn{
-    display: flex;
-    justify-content: center;
-    Width:73.76px;
-Height:47.25px; 
-
-}
-
- 
-
-@media screen and (max-width: 667px){
-.iconn{
-    display: flex;
-justify-content: center;
-margin-left: 39%;
-}
+    .codigo {
+        
+        right: -15%;
+      }
+      .button {
+        top: -25%;
+        width: 187.9px;
+       height: 60px;
+      }
 }
